@@ -1,0 +1,633 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: rgb(170, 210, 54);
+    --section-padding:40px;
+}
+
+/*======================================================================
+
+=======================>>     header     <<=============================
+
+=======================================================================*/
+
+header{
+    height: 77px;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    background-color: white;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 77px;
+}
+
+header nav img{
+    width: 40px;
+}
+
+header nav #menu-items ,header nav #menu-items a{
+    margin-right: 28px;
+}
+
+header nav #menu-items a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-size: 600;
+    text-transform: capitalize;
+    position: relative;
+}
+
+header nav #menu-items button{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-Size: 12px;
+    font-weight: 600;
+    color: white;
+    Background-color: var(--main-color);
+    padding: 9px 34px;
+    border-radius:4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#drop-down {
+    position: absolute;
+    top: 64px;
+    right:420px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid var(--main-color);
+    background-color: white;
+    box-Shadow: 0 2px 3px #ccc;
+    padding:12px;
+    border-radius: 4px;
+    display: none;
+}
+
+#drop-down1 {
+    position: absolute;
+    top: 64px;
+    right:212px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid var(--main-color);
+    background-color: white;
+    box-Shadow: 0 2px 3px #ccc;
+    padding:12px;
+    border-radius: 4px;
+    display: none;
+
+}
+
+#drop-down a{
+    display: block;
+    padding-top: 8px;
+}
+
+header nav #menu-items :hover #drop-down {
+   display: flex;
+}
+
+
+main{
+    position: relative;
+}
+
+/*======================================================================
+
+=======================>>  landding page  <<=============================
+
+=======================================================================*/
+
+main #back{
+    background: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    padding-bottom: var(--section-padding);
+}
+
+main #back .landing-message {
+    max-width: 780px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main #back .landing-message h3{
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.7;
+}
+
+main #back .landing-message p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    line-height: 1.4;
+    Color: #8b8b99;
+}
+
+/*======================================================================
+
+=======================>> advices section <<=============================
+
+=======================================================================*/
+#secend {
+padding-bottom: var(--section-padding);
+}
+#secend .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill , minmax(270px ,1fr));
+    gap: 10px;
+}
+
+#secend .container div{
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+#secend .container div:nth-last-of-type(4){
+    background-color: turquoise;
+}
+
+#secend .container div:nth-last-of-type(3){
+    background-color: olivedrab;
+}
+
+#secend .container div:nth-last-of-type(2){
+    background-color: peru;
+}
+
+#secend .container div:nth-last-of-type(1){
+    background-color: violet;
+}
+
+#secend .container .fa {
+    color: white;
+    font-size: 60px;
+    align-items: center;
+    margin: 18px 0px;
+    transition: all .2s ease-out;
+}
+
+#secend .container div h3{
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#secend .container div p {
+    word-wrap: normal;
+}
+
+ #secend .container div:hover .fa{
+    transform: scale(1.2);
+}
+
+/*======================================================================
+
+==================>> what make us better section <<======================
+
+=======================================================================*/
+
+#third-section{
+    display: block;
+    background-color:#f7eee2;
+}
+
+#third-section #store{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(270px,1fr));
+}
+
+#third-section #store div{
+    text-align: center;
+    padding: 15px;
+}
+
+#third-section #store div h2{
+   font-size: 18px;
+   font-weight: 100;
+   margin-bottom: 15px;
+   color: #232323;
+}
+
+#forth-section h1 ,#forth-section h4 ,
+#forth-section p {
+    text-align: center;
+}
+
+#third-section h1 ,#third-section h4 ,
+#third-section p {
+    text-align: center;
+}
+
+#third-section h4 , #forth-section h4{
+    padding-top: 88px;
+}
+
+#third-section h4 ,#third-section h1, 
+#third-section p ,#forth-section h4 ,
+#forth-section h1, #forth-section p{
+    padding-bottom: 12px;
+}
+
+#third-section h4 ,#forth-section h4 {
+    Color: var(--main-color) ;
+    font-Size: 24px;   
+    font-family: 'Caveat', cursive;
+    Margin: 0px;
+}
+
+#third-section h1 ,#forth-section h1{
+    Font-Family: 'Poppins', sans-serif;
+    font-Size: 44px;
+    font-weight: 600;
+}
+
+#third-section p , #forth-section p{
+    font-Size: 13px;
+    Letter-Spacing: 0.5px;
+    font-weight: 500;
+    Color: #8b8b99;
+}
+
+#third-section #store div .fa{
+    Background-Color: #e3b375;
+    Font-Size: 32px;
+    padding: 15px;
+    margin: 24px;
+    border-radius:84px ;
+    transition: all .2s ease-in;
+    overflow: hidden;
+}
+
+#third-section #store div:hover .fa{
+    transform: scale(1.2);
+}
+
+#fifth-section {
+    display:grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+    gap: 30px;
+    Font-Family: 'Poppins', sans-serif;
+    font-Size: 16px;
+    font-weight: 500;
+    Color: #8b8b99;
+    Letter-Spacing: 0.5px;
+}
+
+#fifth-section .members{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    Background : #f5f6fb;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding: 42px 32px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin: 0px auto;
+}
+
+#fifth-section .members:hover{
+    box-shadow: 0px 6px 6px #f5f6fb ;
+}
+
+#fifth-section .members:nth-last-of-type(2){
+   margin: 30px 0px;
+}
+
+#fifth-section .members img{
+    border-radius: 50%;
+    Width: 80px;
+    margin: 32px;
+}
+
+#fifth-section .members p{
+    Font-Family: 'Poppins', sans-serif;
+    font-Size: 12px;
+    Letter-Spacing: 0.5px;
+    font-Style: Italic;
+    Color: #8b8b99;
+}
+
+#fifth-section .members h3 {
+    Font-Family: 'Poppins', sans-serif;
+    font-Size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 24px 0px 0px 0px;
+}
+
+/*======================================================================
+
+=======================>>  video section  <<=============================
+
+=======================================================================*/
+
+#video-sec h2{
+    text-align: center;
+    Color: #8b8b99;
+    margin-top: 62px;
+    margin-bottom: 24px;
+}
+
+#video-sec {
+    text-align: center;
+    padding-bottom: var(--section-padding);
+}
+
+#video-sec video {
+    width: 100%;
+}
+
+hr{
+    width: 62px;
+    color: tomato;
+    margin: 32px auto;
+}
+
+#ks{
+    padding-top: var(--section-padding);
+}
+
+#ks .container{
+    display: flex;
+    justify-content: space-around;
+    background-color:#f1fffa;
+    text-align: center;
+    padding-bottom: var(--section-padding);
+    padding-top: var(--section-padding);
+}
+
+#ks .container h3{
+    font-size: 42px;
+}
+
+#ks .container p{
+    color: #57e3b5;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    padding: 0px 32px;
+}
+
+/*======================================================================
+
+=====================>>  subscribe section  <<==========================
+
+=======================================================================*/
+
+#subscribe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#subscribe h3{
+    font-size: 48px;
+}
+
+#subscribe #right{
+    background: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#subscribe #right img {
+    width: 100%;
+}
+
+#subscribe #right input{
+    width: 95%;
+    border-radius:4px;
+    font-family: 'Poppins', sans-serif;
+    padding: 14px;
+    margin-top: 24px;
+    font-Size: 14px;
+    border: none;
+}
+
+#subscribe #right button{
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-Size: 14px;
+    font-weight: 600;
+    color: white;
+    Background-color: rgb(233, 101, 101);
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border-radius:4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#subscribe #right button:hover{
+    border: 1px solid  rgb(233, 101, 101);
+    background-color: white;
+    color:  rgb(233, 101, 101);
+}
+
+#subscribe #left img {
+    width: 100%;
+}
+
+
+#con{
+    padding: 15px;
+}
+
+#con p{
+    word-wrap: break-word;
+}
+
+
+
+#figer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(48% , 1fr));
+    gap: 30px;
+    
+}
+
+#figer button{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-Size: 12px;
+    font-weight: 600;
+    color: white;
+    Background-color:var(--main-color);
+    padding: 14px 34px;
+    border-radius:4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 12px 0px;
+}
+
+#figer input , #figer #text-eara{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 12px 18px;
+    margin: 4px 0px;
+    font-size: 16px;
+}
+
+#figer #h2{
+    Color: var(--main-color) ;
+    font-Size: 18px;   
+    font-family: 'Caveat', cursive;
+    Margin:12px 0px;
+    font-style: italic;
+}
+
+#figer h1{
+    font-size: 42px;
+    font-weight: 900;
+}
+
+#figer p{
+    Color: #8b8b99;
+    margin: 12px 0px;
+    line-height: 24px;
+}
+
+#figer h4{
+    margin-top: 42px;
+    font-size: 24px;
+    line-height: 14px;
+}
+
+
+
+/*======================================================================
+
+=======================>> footer section <<=============================
+
+=======================================================================*/
+
+footer{
+    background: #232323;
+    margin-top: 32px;
+}
+
+footer p{
+    height: 60px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 767px){
+  #third-section #store ,#figer 
+    ,#ks .container , #fifth-section ,#subscribe{
+        flex-direction:column ;
+        justify-content: center;
+    }
+  
+    #fifth-section .members{
+        width: 90%;
+        align-items: center;
+        margin: auto;
+        padding: 32px;
+    }
+
+    #fifth-section .members:nth-last-of-type(2){
+        margin: 24px auto;
+    }
+
+    
+    #subscribe{
+        grid-template-columns: 1fr;
+    }
+
+    #subscribe #right #con {
+        padding: 20px;
+    }
+
+    #subscribe #right #con input{
+        width: 100%;
+    }
+
+    #ks div{
+        padding-bottom: 42px;
+    }
+
+    #figer {
+        text-align: center;
+        padding:14px 24px ;
+    }
+    main .landing-message{
+        width: 100%;
+    }
+    main  #back .landing-message h3{
+
+        letter-spacing: 2px;
+    }
+    
+    
+}
+
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+    #subscribe #right #con input{
+        width: 540px;
+    }
+    #subscribe {
+        height: 480px;
+        overflow: hidden;
+    }
+  
+}
+
+
+
+
+
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
